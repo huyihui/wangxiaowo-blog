@@ -1,0 +1,27 @@
+$(function(){
+	$("#ce").click(function(){
+		$("#mark").fadeToggle(800);
+		$("#cebian").css("right","0");
+	});
+	$("#mark").click(function(){
+		$("#mark").fadeToggle(800);
+		$("#cebian").css("right","-300px");	
+	});
+	$("#cebian").click(function(){
+		$("#mark").fadeToggle(800);
+		$("#cebian").css("right","-300px");	
+	});
+	$("#back").click(function(){
+		$("html,body").animate({scrollTop:0},800);
+	});
+	$(window).on("scroll",function(){
+		if($(window).scrollTop()>$(window).height()) {
+			$("#back").fadeIn(800);
+		}else{
+			$("#back").fadeOut(800);
+		}
+	});
+	$("#more").click(function(){
+		$(window).scrollTop($(window).height());
+	});
+});
