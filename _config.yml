@@ -1,0 +1,8 @@
+title: 王小窝的博客
+description: 投食!养我!
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-cayman
+
+gems:
+  - jekyll-mentions
